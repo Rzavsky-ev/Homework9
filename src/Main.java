@@ -22,17 +22,18 @@ public class Main {
             }
         }
         System.out.println("Максимальная сумма трат за неделю составила " + max +
-                " рублей, минимальная" +" - " + min + " рублей.");
+                " рублей, минимальная" + " - " + min + " рублей.");
 
         //Задача 3
         System.out.println("Задача 3");
         //в задаче буду использовать массив и переменную amountExpenses из 1 задачи
         System.out.println("Средняя сумма трат за месяц составила " +
-                ((float) amountExpenses / (float)payments.length) + " рублей.");
+                ((float) amountExpenses / (float) payments.length) + " рублей.");
 
         //Задача 4
         System.out.println("Задача 4");
         char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+      /*
         char temp;
         for (int i = 0; i < (reverseFullName.length - 1) / 2; i++) {
             // reverseFullName[i] = reverseFullName[j];
@@ -42,6 +43,12 @@ public class Main {
         }
         for (char letter : reverseFullName) {
             System.out.print(letter);
+        }
+        */
+
+        for (int i = reverseFullName.length - 1; i >= 0; i--) {
+            System.out.print(reverseFullName[i]);
+
         }
     }
 }
